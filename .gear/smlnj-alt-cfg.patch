@@ -1,0 +1,25 @@
+Binary files smlnj/.git/index and smlnj-changed/.git/index differ
+diff -ur smlnj/runtime/c-libs/codegen/src/cfg.cxx smlnj-changed/runtime/c-libs/codegen/src/cfg.cxx
+--- smlnj/runtime/c-libs/codegen/src/cfg.cxx	2024-07-02 13:54:59.549946281 +0400
++++ smlnj-changed/runtime/c-libs/codegen/src/cfg.cxx	2024-07-03 14:19:48.640069436 +0400
+@@ -4,7 +4,7 @@
+ //
+ 
+ #include "cfg.hxx"
+-
++#pragma GCC diagnostic ignored "-Wreturn-type"
+ namespace CTypes {
+     c_type * c_type::read (asdl::instream & is)
+     {
+diff -ur smlnj/runtime/c-libs/codegen/src/cfg-prim-codegen.cxx smlnj-changed/runtime/c-libs/codegen/src/cfg-prim-codegen.cxx
+--- smlnj/runtime/c-libs/codegen/src/cfg-prim-codegen.cxx	2024-07-02 13:54:59.549946281 +0400
++++ smlnj-changed/runtime/c-libs/codegen/src/cfg-prim-codegen.cxx	2024-07-03 14:19:44.757071614 +0400
+@@ -11,7 +11,7 @@
+ 
+ #include "cfg.hxx"
+ #include "target-info.hxx"
+-
++#pragma GCC diagnostic ignored "-Wreturn-type"
+ namespace CFG_Prim {
+ 
+   // helper function to get LLVM type for numbers
