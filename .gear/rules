@@ -1,0 +1,3 @@
+tar: .
+spec: .gear/smlnj.spec
+copy?: .gear/*.patch
