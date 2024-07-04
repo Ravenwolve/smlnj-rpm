@@ -79,7 +79,7 @@
 latex.out/
 
 ## Other stuff ##
-*.tgz
+#*.tgz
 *.swp
 
 # macOS finder
